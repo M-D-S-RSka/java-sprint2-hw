@@ -1,16 +1,13 @@
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.List;
 
 public class CreatingReports {
     Operation operation;
-    ArrayList<String> months;
+    List<String> months = List.of("Январь", "Февраль", "Март");
 
     void checkReports(YearlyReport yearlyReport, MonthlyReport monthlyReport) {
         if (yearlyReport.yearLoad && monthlyReport.monthLoad) {
-            months = new ArrayList<>();
-            months.add("Январь");
-            months.add("Февраль");
-            months.add("Март");
 
             double totalProfit = 0;
             double totalExpense = 0;
